@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="calculator-style.css">
+    <title>JavaScript Calculator</title>
+</head>
+
+<body>
+    <h1>Welcome to JavaScript Calculator</h1>
+    <div class="flex-container">
+        <div class="calculator-container">
+            <input type="number" name="num1" class="indented-input">
+            <br>
+            <select name="operator" id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="number" name="num2">
+            <br>
+            <button onclick="doMath()">Calculate</button>
+            <button onclick="toggleHistoryView()">Toggle History</button>
+            <br>
+            <span>Result (updates on pressing "Calculate"):</span>
+            <span id="result"></span>
+        </div>
+        <div class="history-container">
+            <p id="history" class="hidden">History</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
