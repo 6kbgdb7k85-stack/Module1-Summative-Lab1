@@ -23,7 +23,22 @@ h1 {
 
 /*Indents the first row to be inline with the second input much like when doing math by hand*/
 .indented-input {
-    margin-left: 2.72rem;
+    grid-column: 2;
+    width: 50%;
+}
+
+.inputs-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+#operator {
+    grid-column: 1;
+}
+
+.calculator-container input[name="num2"] {
+    grid-column: 2;
+    width: 50%;
 }
 
 br {
